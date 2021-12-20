@@ -1,0 +1,43 @@
+.color-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.color-list .color-item {
+  margin: 5px;
+  /* border: 1px solid #888; */
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.color-list .color-item.active, .color-list .color-item:hover{
+  border: 1px solid var(--primary-color);
+
+
+}
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  background-color: #ecf8b3;
+  color: #555;
+  text-align: center;
+  padding: 5px 5px;
+  border: 1px solid #111;
+  /* Position the tooltip */
+  position: absolute;
+  top: 120%;
+  left: 0;
+  z-index: 1;
+  font-size: 0.7rem;
+  display: none;
+}
+
+.tooltip:hover .tooltiptext {
+  display: block;
+}

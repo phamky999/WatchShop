@@ -1,0 +1,111 @@
+section.home-testi{
+    padding: 60px 0 20px 0;
+}
+.home-testi .home-testi-item{
+    padding-top: 50px;
+}
+section.home-testi .home-testi-title h3{
+    text-align: center;
+    font-size:1.4rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+    letter-spacing: 0.05rem;
+}
+.home-testi .home-testi-item img{
+    height:200px;
+    width: 200px;
+    border-radius: 20px ;
+}
+.home-testi .home-testi-item .testi-item-img{
+    text-align:center;
+    margin-bottom: 50px;
+}
+.home-testi .home-testi-item .testi-item-img>div{
+    position: relative;
+    display: inline-block;
+}
+.home-testi .home-testi-item .testi-item-img>div::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 150px;
+    width: 80px;
+    height: calc(100% + 40px);
+    background-color:var(--primary-color);
+    z-index:-1;
+    border-radius: 0 20px 20px 0;
+}
+
+
+.home-testi .home-testi-item .testi-item-content{
+    color: #444;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+
+}
+.home-testi .home-testi-item .testi-item-content >div{
+    margin-top: 15px;
+}
+.home-testi .home-testi-item .testi-item-content h6{
+    padding-left: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+.home-testi .home-testi-item .testi-item-content h6::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #111;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY( -50%);
+}
+.home-testi .home-testi-item .testi-item-content >div p{
+    font-size: 0.8rem;
+}
+
+.home-testi .slider-nav-control{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-testi .slider-nav-control i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding:10px;
+}
+@media (min-width: 768px) {
+    section.home-testi .home-testi-title h3{
+        
+        font-size:1.8rem;
+    }
+    .home-testi .home-testi-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .home-testi .home-testi-item .testi-item-img{
+        padding: 50px;
+        margin-bottom: 20px;
+    }
+    .home-testi .home-testi-item .testi-item-content{
+        width: 60%;
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+    .home-testi .home-testi-item .testi-item-content h6{
+        padding-left: 25px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        position: relative;
+    }
+    .home-testi .home-testi-item .testi-item-content >div p{
+        font-size: 0.9rem;
+    }
+}

@@ -75,7 +75,7 @@
   }
   .collections-ul{
     position: absolute;
-    top: calc(100% + 12px);
+    top: calc(100% + 13px);
     left:0;
     width: 100%;
     padding:30px;

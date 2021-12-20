@@ -44,7 +44,6 @@ body {
   font-size: 1rem;
   color: #222;
   font-weight: 400;
-  min-height: 200vh;
   position: relative;
 }
 
@@ -82,6 +81,30 @@ img {
     opacity:1
   }
 }
+/* slider animation */
+@keyframes showFromTop{
+  from{
+    transform: translateY(-50%);
+    opacity:0;
+  }
+  to{
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+@keyframes showFromRight{
+  from{
+    transform: translateX(40%);
+    opacity:0;
+  }
+  to{
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+
+
+
 @keyframes showformSearch {
   from {
     opacity:0;

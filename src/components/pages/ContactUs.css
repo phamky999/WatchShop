@@ -1,0 +1,100 @@
+div.contact-page{
+    padding: 50px 0;
+}
+.contact-page .contact-header {
+    text-align: center;
+    font-size:0.9rem;
+    line-height:1.5rem;
+    color: #333;
+    margin-bottom: 50px;
+}
+.contact-page .contact-header h3 {
+    text-align: center;
+    font-size:1.2rem;
+    line-height:2.5rem;
+    color: #222;
+    letter-spacing: 0.1rem;
+    font-weight:600;
+}
+.contact-page .contact-body{
+    background-color: #f7f7f7;
+    padding: 30px 10px;
+}
+
+.contact-page .contact-body .detail{
+    text-align: center;
+}
+.contact-page .contact-body .detail h4{
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+.contact-page .contact-body .detail li{
+    padding: 10px 0;
+}
+.contact-page .contact-body .detail i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.contact-page .contact-body .detail span{
+    display: block;
+    font-size:0.8rem;
+    color: #333;
+    line-height:1.5rem
+}
+.contact-page .form-box h4{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 500;
+}
+.contact-page .form-box .form-group{
+    padding: 10px 0;
+}
+.contact-page .form-box input[type="text"], .contact-page .form-box textarea{
+    width: 100%;
+    line-height: 1.8rem;
+    font-size: 0.9rem;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid #666;
+}
+.contact-page .form-box textarea{
+    height:132px;
+}
+.contact-page .form-box input[type="text"]::placeholder,
+.contact-page .form-box textarea::placeholder{
+    font-size: 0.8rem;
+    color: #888;
+}
+.contact-page .form-box button{
+    outline:none;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    color: #fff;
+    background-color:var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .contact-page .contact-header h3{
+        font-size:1.5rem;
+    }
+
+    .contact-page .contact-body .detail ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-page .contact-body .detail span{
+    font-size: 0.9rem;
+}
+    
+    
+    
+    .contact-page .contact-body{
+        background-color: #f7f7f7;
+        padding: 30px 50px;
+    }
+}

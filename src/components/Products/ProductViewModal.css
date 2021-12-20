@@ -1,0 +1,237 @@
+.product-modal {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.product-modal .product-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+.product-modal h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+}
+
+.product-modal .product-modal-header i {
+  font-size: 1.5rem;
+  padding: 10px 0 10px 10px;
+  cursor: pointer;
+}
+
+.product-modal .product-modal-body {
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+}
+.product-modal .product-modal-body img {
+  display: none;
+}
+.product-modal .product-modal-content h3 {
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.product-modal .product-modal-content .price {
+  padding: 5px 0;
+}
+
+.product-modal .product-modal-content .price span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.product-modal .product-modal-content .price span.price--before {
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+.product-modal .product-modal-content .desc {
+  padding: 5px 0;
+}
+
+.product-modal .size {
+  padding: 5px 0;
+}
+.product-modal .size > div {
+  padding-top: 8px;
+}
+.product-modal .size > div > div {
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: #eee;
+  margin: 5px;
+}
+.product-modal .color {
+  padding: 5px 0;
+}
+.product-modal .color > span {
+  padding-bottom: 8px;
+}
+.product-modal .color > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-right: 40px;
+}
+.product-modal .color > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  border-radius: 50%;
+  /* border: 1px solid #eee; */
+  text-align: center;
+  cursor: pointer;
+}
+.product-modal .color > div > div span.color-display {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.product-modal .material {
+  padding: 5px 0;
+}
+.product-modal .material > div {
+  padding-top: 8px;
+}
+.product-modal .material > div > div {
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: #eee;
+  margin: 5px;
+}
+
+.product-modal .quantity {
+  padding: 10px 0;
+  /* display: flex;
+  align-items: center; */
+}
+.product-modal .quantity > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 0 0 5px;
+  height: 30px;
+  width: 200px;
+}
+.product-modal .quantity input {
+  border: 1px solid #999;
+  font-size: 1rem;
+  outline: none;
+  width: 80px;
+  height: 100%;
+  text-align: center;
+  padding: 0 10px;
+  border-left: none;
+  border-right: none;
+}
+.product-modal .quantity > div > span {
+  text-align: center;
+  height: 100%;
+  width: 30px;
+  background-color: #fff;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.product-modal .quantity > div > span > span {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.product-modal .button-control {
+  padding: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-modal .button-control button {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.product-modal .button-control button:hover {
+  background-color: var(--background-color-btn);
+}
+.product-modal .button-control button:last-child {
+  margin-left: 20px;
+  background-color: var(--background-color-btn);
+}
+.product-modal .button-control button:last-child:hover {
+  background-color: var(--primary-color);
+}
+
+.product-modal .color-tooltip {
+  position: relative;
+}
+
+.product-modal .color-tooltip .color-tooltiptext {
+  background-color: #ecf8b3;
+  color: #555;
+  text-align: center;
+  padding: 5px 5px;
+  border: 1px solid #111;
+  /* Position the tooltip */
+  position: absolute;
+  top: 120%;
+  left: 0;
+  z-index: 1;
+  font-size: 0.7rem;
+  display: none;
+}
+
+.product-modal .color-tooltip:hover .color-tooltiptext {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .product-modal .product-modal-body {
+    display: flex;
+    padding: 10px 0;
+    flex-direction: row;
+  }
+  .product-modal .product-modal-body > div {
+    width: 50%;
+  }
+  .product-modal .product-modal-body img {
+    display: block;
+  }
+}
+
+.product-modal .size-item,.product-modal .color-tooltip, .product-modal .material-item{
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.product-modal .size-item:hover,
+.product-modal .size-item.active,
+.product-modal .material-item.active,
+.product-modal .material-item:hover{
+  background-color:  var(--primary-color);
+  color: #fff;
+}
+
+
+.product-modal .color-tooltip.active,
+.product-modal .color-tooltip:hover{
+  border: 1px solid var(--primary-color);
+}
+
+
+.product-modal .feedback-err{
+  color: red;
+}

@@ -1,0 +1,153 @@
+.products-sidebar-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  background-color: #fff;
+  overflow-y: scroll;
+  padding-left: 10px;
+  left: -100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.products-sidebar-box.active {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.products-sidebar-box::-webkit-scrollbar {
+  width: 3px;
+}
+
+.products-sidebar-box .products-sidebar-menu-header {
+  display: flex;
+  padding: 20px 10px 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.products-sidebar-box .products-sidebar-menu-header h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.products-sidebar-box .sidebar-menu-close-icon {
+  padding: 10px;
+  cursor: pointer;
+}
+.products-sidebar-menu-body .sidebar-menu {
+  margin-bottom: 15px;
+}
+.products-sidebar-menu-body .sidebar-menu h3 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.products-sidebar-box .products-sidebar-menu-header i {
+  font-size: 1.5rem;
+}
+
+.sidebar-menu.materials > div {
+  max-height: 130px;
+  overflow-y: scroll;
+}
+.sidebar-menu.materials > div::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-menu.materials > div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.sidebar-menu.materials > div::-webkit-scrollbar-thumb {
+  background: #666;
+}
+.sidebar-menu.materials > div::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+.products-sidebar-box .products-sidebar-menu-bottom {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.products-sidebar-box .products-sidebar-menu-bottom button {
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.products-sidebar-box .products-sidebar-menu-bottom button.btn--success {
+  background-color: var(--primary-color);
+}
+.products-sidebar-box .products-sidebar-menu-bottom button.btn--success:hover {
+  background-color: var(--background-color-btn);
+}
+.products-sidebar-box .products-sidebar-menu-bottom button.btn--cancel {
+  background-color: #5a6268;
+}
+.products-sidebar-box .products-sidebar-menu-bottom button.btn--cancel:hover {
+  background-color: #4b5257;
+}
+.products-sidebar-box .products-sidebar-menu-bottom button.btn--clean {
+  background-color: var(--background-color-btn);
+}
+.products-sidebar-box .products-sidebar-menu-bottom button.btn--clean:hover {
+  background-color: var(--primary-color);
+}
+@media screen and (min-width: 576px) {
+  .products-sidebar-box {
+    width: 60%;
+  }
+  .sidebar-menu.colors {
+    padding-right: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products-sidebar-box {
+    width: 40%;
+  }
+  .sidebar-menu.colors {
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .products-sidebar-box {
+    position: static;
+    top: unset;
+    width: unset;
+    height: unset;
+    z-index: unset;
+    background-color: #fff;
+    overflow-y: unset;
+    padding-left: 10px;
+    left: unset;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+    display:block
+  }
+  .products-sidebar-box.slidebar-lg-fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+  }
+  .products-sidebar-box .products-sidebar-menu-header {
+    padding: 0px 10px 20px 0;
+  }
+  .products-sidebar-box .sidebar-menu-close-icon {
+    display: none;
+  }
+  .products-sidebar-box
+    .products-sidebar-menu-bottom
+    .sidebar-menu-btn.btn--cancel {
+    display: none;
+  }
+  .products-sidebar-menu-body .sidebar-menu {
+    padding: 15px 0;
+  }
+  .sidebar-menu.colors {
+    padding-right: 20px;
+  }
+}

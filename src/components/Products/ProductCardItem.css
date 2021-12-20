@@ -1,0 +1,110 @@
+.product-card{
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 4%);
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+.product-card .item-img-box{
+    width: 100%;
+    position: relative;
+}
+.product-card .item-img-box a{
+    display: inline-block;
+    width: 100%;
+}
+
+.product-card .item-img-box a:hover .item-img-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.product-card .item-img-box .item-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.product-card .item-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    /* height: 220px;
+    object-fit:contain; */
+}
+.product-card .item-body-box{
+    line-height: 1.75rem;
+    padding: 0 10px 10px 10px;
+}
+.product-card .item-body-box .item-name{
+    font-size:1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-bottom: 6px;
+}
+.product-card .item-body-box .item-name:hover {
+    color: var(--primary-color);
+}
+.product-card .item-body-box .item-price  {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+.product-card .item-body-box .item-btn-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-card .item-body-box .item-btn-control button,
+.product-card .item-body-box .item-btn-control a{
+    display: inline-block;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    height:32px;
+    transition: all 0.3s ease;
+}
+.product-card .item-body-box .item-btn-control button:hover,
+.product-card .item-body-box .item-btn-control a:hover{
+    background-color: var(--background-color-btn);
+}
+.product-card .item-body-box .item-price .item-price--sale~span{
+    text-decoration: line-through;
+    color: #666;
+    font-size:0.9rem;
+    margin-left: 10px;
+}
+
+.product-card .item-body-box .item-saleOf{
+    position: absolute;
+    top: 12px;
+    left: -30px;
+    width: 110px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    transform: rotate(-45deg);
+}
+.product-card .item-body-box .item-saleOf span{
+    font-size: 0.8rem;
+    color: #fff;
+    display: inline-block;
+}

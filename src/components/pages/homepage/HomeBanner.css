@@ -1,0 +1,120 @@
+
+section.home-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: calc(100vh - var(--header-height)); */
+    min-height: 400px;
+    /* background-color: #eee; */
+    position: relative;
+}
+section.home-banner .home-banner-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(68, 34, 34, 0.5);
+    z-index: 0;
+}
+.home-banner .home-banner-content{
+    /* width: 60%; */
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+.home-banner .home-banner-content h3{
+    font-size: 1.8rem;
+    color:  var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+} 
+.home-banner .home-banner-content p{
+    text-align: center;
+}
+.home-banner .home-banner-content p span{
+    display: block;
+    font-size: 0.9rem;
+    line-height: 2rem;
+}
+.home-banner .home-banner-content a{
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color:  var(--primary-color);
+    margin-top: 20px;
+    font-weight: 500;
+}
+.home-banner .home-banner-content a:hover{
+    
+    background-color:  #fff;
+    color: var(--primary-color);
+}
+
+
+@media screen and  (min-width: 1200px) {
+    section.home-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - var(--header-height));
+        background-color: #eee;
+        position: relative;
+    }
+    section.home-banner .home-banner-overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(68, 34, 34, 0.5);
+        z-index: 0;
+    }
+    .home-banner .home-banner-content{
+        width: 60%;
+        color: rgb(255, 255, 255);
+        z-index: 2;
+        position: relative;
+        text-align: center;
+    }
+    
+    .home-banner .home-banner-content h3{
+        font-size: 3.75rem;
+        color:  var(--primary-color);
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        margin-bottom: 50px;
+    } 
+    .home-banner .home-banner-content p{
+        text-align: center;
+    }
+    .home-banner .home-banner-content p span{
+        display: block;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    .home-banner .home-banner-content a{
+        display: inline-block;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05rem;
+        padding: 10px 20px;
+        color: #fff;
+        background-color:  var(--primary-color);
+        margin-top: 20px;
+        font-weight: 500;
+    }
+    .home-banner .home-banner-content a:hover{
+        
+        background-color:  #fff;
+        color: var(--primary-color);
+    }
+}

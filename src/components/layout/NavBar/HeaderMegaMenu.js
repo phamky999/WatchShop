@@ -25,7 +25,7 @@ export default function HeaderMegaMenu(props) {
               </div>
               <ul className="megamenu-list">
                   {
-                    DUMY_MEGA_MENU.map((item,index) =>(<MegaMenuSubNav key={index} item={item} />))
+                    DUMY_MEGA_MENU.map((item,index) =>(<MegaMenuSubNav key={index} item={item} onClose={closeMobileMenuHandler} />))
                   }
               </ul>
           </div>

@@ -1,0 +1,279 @@
+.faq-page{
+    padding:50px 0;
+}
+.faq-page .menu{
+    position: relative;
+    min-height:50px;
+}
+.faq-page .menu ul{
+     display: none;
+}
+.faq-page .menu ul li{
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size:0.9rem;
+    font-weight:500;
+    transition: all 0.3s ease;
+
+}
+.faq-page .menu ul li.menu-active,
+.faq-page .menu ul li span:hover{
+    color: var(--primary-color);
+}
+.faq-page .menu ul.active{
+    display:block;
+    
+}
+.faq-page .mobile-menu{
+    position:absolute;
+    top:-8px;
+    right:0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.faq-page .mobile-menu span{
+    display: none;
+}
+
+section.faq-box h3{
+    text-align:left;
+    font-weight: 600;
+    padding: 20px 0;
+    font-size:1.2rem;
+}
+section.faq-box .faq-item{
+    border: 1px solid #eee;
+    padding: 15px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+
+}
+section.faq-box .faq-item:hover{
+    background-color: rgb(225, 225, 225);
+}
+
+section.faq-box .topic_content .faq-collapse-btn{
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 0;
+    border: none;
+    background: none;
+    outline: none;
+    width:100%;
+    text-align: left;
+}
+section.faq-box .topic_content p{
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 0 0;
+    text-align: left;
+    line-height:1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display:none;
+    transform-origin: top;
+    animation: GrowFromTop 0.3s ease;
+}
+
+
+/*  payment policy*/
+section.payment-box .title, section.privacy-box .title, section.return-box h3, section.terms-box .title{
+    text-align:left;
+    font-weight: 600;
+    padding: 20px 0;
+    font-size:1.2rem;
+}
+
+.faq-page .payment-box .payment-item{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 8%);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing:0.04rem;
+}
+.faq-page .payment-box .payment-item h4{
+    font-size:1rem;
+    font-weight:500;
+    padding: 10px 0;
+}
+
+/*  privacy policy*/
+.faq-page .privacy-box h3{
+    font-size:1rem;
+    font-weight:500;
+    padding: 20px 0;
+}
+.faq-page .privacy-box p{
+    font-size:0.9rem;
+    font-weight:400;
+    line-height: 1.5rem;
+    color:#666;
+    padding:0px 0 10px 0;
+}
+
+.faq-page .privacy-box a{
+    border: 1px solid #222;
+    text-transform: uppercase;
+    padding:5px 10px;
+    letter-spacing:0.05rem;
+    font-size: 0.9rem;
+    margin-bottom:10px;
+}
+
+.faq-page .privacy-box li{
+    padding: 5px 0;
+    margin: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+.faq-page .privacy-box span{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+.faq-page .privacy-box span:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius: 50%;
+    background-color:var(--primary-color);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    
+}
+
+
+/*Return policy*/
+section.return-box h3{
+    font-weight: 500;
+}
+section.return-box h3 span{
+    font-weight: 600;
+    border-bottom: 1px solid #e2e2e2;
+}
+section.return-box ul{
+    margin-bottom: 20px;
+}
+section.return-box ul li{
+    font-weight:400;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee;
+    padding:10px 0;
+    color: #333;
+}
+section.return-box ul li:last-child{
+    border: none;
+}
+
+ /*Terms*/
+ section.terms-box ul li{
+     padding: 5px 0;
+     margin-bottom: 20px;
+     line-height: 1.5rem;
+     font-size: 0.9rem;
+     color: #333;
+
+ }
+ section.terms-box ul li span{
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+section.terms-box ul li span:before{
+    content:"";
+    width:5px;
+    height:5px;
+    border-radius: 50%;
+    background-color:var(--primary-color);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    
+}
+@media screen and (min-width: 768px){
+    .faq-page .mobile-menu{
+        top:0;
+    }
+    .faq-page .mobile-menu span{
+        display: block;
+        font-size: 1rem;
+    }
+    .faq-page .menu ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 30px 0 60px 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .faq-page .menu ul.active{
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+    .faq-page .menu ul li:last-child{
+        flex: 1;
+        
+    }
+    .faq-page .menu ul li{
+        padding-bottom: 10px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight:500;
+        transition: all 0.3s ease;
+        margin:0;
+        padding:10px 10px;
+        border-bottom: 1px solid #eee;
+        transition: all 0.3s ease;
+        letter-spacing: 0.05rem;
+        height:40px
+    }
+    .faq-page .menu ul li.menu-active{
+        border:1px solid #eee;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 1px solid #fff;
+    }
+
+
+    section.faq-box h3, section.payment-box .title,section.privacy-box .title, section.return-box h3, section.terms-box .title{
+        font-weight: 600;
+        padding: 50px 0;
+        font-size:1.4rem;
+        text-align: center;
+    }
+    section.return-box li{
+        margin: 10px 5px 20px 0;
+    }
+}
+@media screen and (min-width: 992px){
+    .faq-page .privacy-box div[class^="flex-row-reverse"]{
+        margin-top: 50px;
+    }
+    .faq-page .privacy-box h3{
+        font-size:1.2rem;
+        font-weight:500;
+        padding: 0 0 20px 0;
+    }
+    .faq-page .privacy-box p{
+        font-size:1rem;
+        padding-bottom: 20px;
+    }
+    .faq-page .privacy-box li:first-child{
+        padding: 0;
+        margin: 0;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #eee;
+    }
+}

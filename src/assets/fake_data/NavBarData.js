@@ -8,7 +8,7 @@ const DUMY_MEGA_MENU = [
     },
     {
       title: "Products",
-      path: "/collections/all",
+      path: "/products/all",
     },
     {
       title: "Collections",
@@ -19,35 +19,35 @@ const DUMY_MEGA_MENU = [
           sub_item: [
             {
               title: "Smartwatch - Bip U",
-              path: "/products/t-shirt",
+              path: "/products/1",
             },
             {
               title: "Smartwatch - Bip U Pro",
-              path: "/products/short-dress",
+              path: "/products/2",
             },
             {
               title: "Smartwatch - GTR 2 LTE",
-              path: "/products/tutu-women",
+              path: "/products/3",
             },
             {
               title: "Smartwatch - GTR 2E",
-              path: "/products/print-backpack-with-adjustable",
+              path: "/products/4",
             },
             {
               title: "Smartwatch - GTR 2 Mini",
-              path: "/products/halt-shirt",
+              path: "/products/5",
             },
             {
               title: "Smartwatch - Pop",
-              path: "/products/straps-and-zip-closure",
+              path: "/products/6",
             },
             {
               title: "Smartwatch - T-Rex Pro",
-              path: "/products/ladies-dress",
+              path: "/products/7",
             },
             {
               title: "Smartwatch - Zepp E (Round)",
-              path: "/products/sennheiser-miniheadphones",
+              path: "/products/8",
             },
           ],
         },
@@ -56,35 +56,35 @@ const DUMY_MEGA_MENU = [
           sub_item: [
             {
               title: "Smartwatch - T-Rex Pro",
-              path: "/products/ladies-dress",
+              path: "/products/7",
             },
             {
               title: "Smartwatch - Zepp E (Round)",
-              path: "/products/sennheiser-miniheadphones",
+              path: "/products/8",
             },
             {
               title: "Smartwatch - Bip U Pro",
-              path: "/products/short-dress",
+              path: "/products/2",
             },
             {
               title: "Smartwatch - GTR 2E",
-              path: "/products/print-backpack-with-adjustable",
+              path: "/products/4",
             },
             {
               title: "Smartwatch - GTR 2 Mini",
-              path: "/products/halt-shirt",
+              path: "/products/5",
             },
             {
               title: "Smartwatch - Bip U",
-              path: "/products/t-shirt",
+              path: "/products/1",
             },
             {
               title: "Smartwatch - Pop",
-              path: "/products/straps-and-zip-closure",
+              path: "/products/6",
             },
             {
               title: "Smartwatch - GTR 2 LTE",
-              path: "/products/tutu-women",
+              path: "/products/3",
             },
           ],
         },
@@ -126,28 +126,12 @@ const DUMY_MEGA_MENU = [
               path: "/pages/contact",
             },
             {
-              title: "Faq",
-              path: "/pages/faq",
+              title: "Faq & Policy",
+              path: "/pages/faq-policy",
             },
             {
-              title: "Blog",
-              path: "/blogs/news",
-            },
-            {
-              title: "Payment Policy",
-              path: "/pages/payment-policy",
-            },
-            {
-              title: "Privacy Policy",
-              path: "/pages/privacy-policy",
-            },
-            {
-              title: "Return Policy",
-              path: "/pages/return-policy",
-            },
-            {
-              title: "Terms Conditions",
-              path: "/pages/terms-conditions",
+              title: "Search",
+              path: "/search",
             },
             {
               title: "Page 404",
